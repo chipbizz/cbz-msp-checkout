@@ -1,0 +1,28 @@
+{
+  "name": "nl-chipbizz-plugins-startmspcheckout",
+  "version": "0.0.1",
+  "description": "A Cordova/PhoneGap plugin to add support for MultiSafePay checkout transactions.",
+  "cordova": {
+    "id": "startmspcheckout",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "ios",
+    "android",
+    "payment",
+    "multisafepay",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.0.0"
+    }
+  ],
+  "author": "E.M. Schoel",
+  "license": "MIT"
+}

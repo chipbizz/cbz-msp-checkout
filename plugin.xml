@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="nl-chipbizz-plugins-startmspcheckout" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>StartMspCheckout</name>
+  <author>E.M. Schoel</author>
+  <description>A Cordova/PhoneGap plugin to add support for MultiSafePay checkout transactions.</description>
+  <keywords>cordova, ios, android, payment, multisafepay</keywords>
+  <license>MIT</license>
+  <js-module name="StartMspCheckout" src="www/StartMspCheckout.js">
+    <clobbers target="startmspcheckout" />
+  </js-module>
+  <engines>
+    <engine name="cordova" version=">=6.0.0"/>
+  </engines>
+  <dependency id="cordova-plugin-cocoapod-support"/>
+  <platform name="ios">
+    <pods-config use-frameworks="true"></pods-config>
+    <pod name="FastCheckout" path="/Users/erikschoel/Projects/fastcheckout-ios-sdk/FastcheckoutKit.framework" />
+    <config-file target="config.xml" parent="/widget">
+      <feature name="StartMspCheckout">
+        <param name="ios-package" value="StartMspCheckout" />
+      </feature>
+    </config-file>
+    <source-file src="src/ios/StartMspCheckout.swift" />
+  </platform>
+</plugin>
